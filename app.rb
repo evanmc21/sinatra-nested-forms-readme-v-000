@@ -13,7 +13,7 @@ post '/student' do
     Course.new(details)
   end
   #iterate over params[:student][:courses]
-  @courses = Course.all
+  @courses = Course.all #store instantiated courses in the instance variable @courses, making the course info available within the view student.erb
 
   erb :student
 end
